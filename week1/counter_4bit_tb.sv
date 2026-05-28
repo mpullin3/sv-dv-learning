@@ -1,0 +1,18 @@
+module tb_counter;
+  logic clk, resetN;
+  logic [3:0] count;
+  
+  counter_4bit dut (
+    .clk(clk),
+    .resetN(resetN),
+    .count(count)
+  );
+  
+  initial begin
+    clk = 0;
+    resetN = 0; #10;
+    resetN = 1; #10;
+    repeat(16) #10 clk = ~clk;
+    $finish;
+  end
+endmodule
