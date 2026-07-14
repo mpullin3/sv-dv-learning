@@ -16,7 +16,7 @@ Week 7 marks my transition from SystemVerilog basics to industry-standard verifi
 
 ## Daily Content Breakdown
 
-### Monday 7/7: UVM Overview
+### Monday 7/6: UVM Overview
 
 **Key Concepts:**
 - UVM = Universal Verification Methodology (standardized framework on top of SystemVerilog)
@@ -33,7 +33,7 @@ Week 7 marks my transition from SystemVerilog basics to industry-standard verifi
 
 ---
 
-### Tuesday 7/8: Class Hierarchy
+### Tuesday 7/7: Class Hierarchy
 
 **Base Classes:**
 
@@ -65,7 +65,7 @@ Week 7 marks my transition from SystemVerilog basics to industry-standard verifi
 
 ---
 
-### Wednesday 7/9: uvm_env & uvm_agent
+### Wednesday 7/8: uvm_env & uvm_agent
 
 **uvm_env (Environment):**
 - Top-level container orchestrating all verification
@@ -95,7 +95,7 @@ Week 7 marks my transition from SystemVerilog basics to industry-standard verifi
 
 ---
 
-### Thursday 7/10: uvm_driver & uvm_monitor
+### Thursday 7/9: uvm_driver & uvm_monitor
 
 **Virtual Interfaces:**
 - Reference to actual interface (not instance)
@@ -132,7 +132,7 @@ Week 7 marks my transition from SystemVerilog basics to industry-standard verifi
 
 ---
 
-### Friday 7/11: uvm_sequencer & uvm_sequence
+### Friday 7/10: uvm_sequencer & uvm_sequence
 
 **uvm_sequencer:**
 - Mediator between sequences and driver
@@ -169,7 +169,7 @@ Week 7 marks my transition from SystemVerilog basics to industry-standard verifi
 
 ---
 
-### Saturday 7/12: uvm_scoreboard & Checking
+### Saturday 7/11: uvm_scoreboard & Checking
 
 **uvm_scoreboard:**
 - Compares expected vs actual results
