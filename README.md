@@ -15,3 +15,4 @@ Summer 2026 Design Verification learning: SystemVerilog → UVM → FIFO project
 - **Week 8:** Created complete 1100-line professional UVM testbench with 9 test scenarios and enhanced components.
 - **Week 9:** Covered UVM advanced concepts including constraint randomization, coverage groups, assertions, logging, and reusability.
 - **Week 10:** Designed synchronous FIFO module with comprehensive verification plan, coverage strategy, and testbench architecture.
+- **Week 11:** Built a complete UVM testbench infrastructure for FIFO verification with driver, monitor, scoreboard, 5 test scenarios, and comprehensive coverage measurement (1,400+ lines of code).
