@@ -1,6 +1,6 @@
 //============================================================================
 // SYNCHRONOUS FIFO WITH ASSERTIONS
-// 16-entry, 8-bit data, parameterized design with comprehensive assertions
+// 16 entry, 8 bit data, parameterized design with comprehensive assertions
 //============================================================================
 
 module fifo #(
