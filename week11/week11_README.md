@@ -91,10 +91,10 @@ FIFO_TEST_BASE
 
 ### **Test Classes (5 scenarios)**
 - FIFO_WRITE_TEST: 16-entry fill
-- FIFO_READ_TEST: 8-entry drain
+- FIFO_READ_TEST: 8 entry drain
 - FIFO_MIXED_TEST: 32 mixed operations
-- FIFO_STRESS_TEST: 500-operation stress
-- FIFO_FULL_DRAIN_TEST: Full-empty cycle
+- FIFO_STRESS_TEST: 500 operation stress
+- FIFO_FULL_DRAIN_TEST: Full empty cycle
 
 ---
 
@@ -109,7 +109,7 @@ FIFO_TEST_BASE
 | fifo_scoreboard.sv | Scoreboard | 100 |
 | fifo_agent.sv | Agent bundling | 40 |
 | fifo_environment.sv | Environment | 50 |
-| fifo_configuration.sv | Configuration | 30 |
+| fifo_config.sv | Configuration | 30 |
 | fifo_transaction.sv | Base transaction | 25 |
 | fifo_writeTransaction.sv | Write transaction | 30 |
 | fifo_readTransaction.sv | Read transaction | 30 |
@@ -118,10 +118,11 @@ FIFO_TEST_BASE
 | fifo_readTest.sv | Read test | 50 |
 | fifo_mixedTest.sv | Mixed test | 60 |
 | fifo_stressTest.sv | Stress test | 60 |
-| fifo_fullDrainTest.sv | Full-drain test | 70 |
+| fifo_fullDrainTest.sv | Full drain test | 70 |
+| moduleWithAssertions.sv | RTL FIFO with 12 assertions | 160 |
 | week11_README.md | This file | 300 |
 
-**Total:** ~1,400 lines of production-quality UVM code
+**Total:** ~1,560 lines of production quality UVM code + RTL
 
 ---
 
@@ -163,12 +164,19 @@ Scoreboard verifies correctness
 
 ---
 
-## Next Steps (Week 12)
+## RTL Design
 
-- Add coverage tracking enhancements
-- Run regression suite
-- Debug any issues
-- Prepare for September lab testing
+### **moduleWithAssertions.sv**
+Complete synchronous FIFO RTL with:
+- 16 entry circular buffer
+- 8 bit data width
+- Parameterized design
+- 12 comprehensive SVA assertions covering:
+  - Full/empty mutual exclusion
+  - Occupancy range validation
+  - Pointer progression verification
+  - Flag-occupancy correlation
+  - Write data capture verification
 
 ---
 
@@ -177,13 +185,9 @@ Scoreboard verifies correctness
 **Week 11:** ✅ Complete
 - All components coded
 - All tests implemented
+- RTL with assertions complete
 - Ready for elaboration
 - Ready for simulation
-
-**Week 12:** ⏳ Next
-- Refinement and regression
-- Coverage optimization
-- Final polish
 
 **September:** Lab testing
 - Questa simulation
@@ -191,7 +195,3 @@ Scoreboard verifies correctness
 - Coverage measurement
 
 ---
-
-**Checkpoint 11 Ready to Push**
-
-All Week 11 files consolidated and documented. Ready for GitHub push and September simulation testing.
