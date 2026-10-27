@@ -1,7 +1,7 @@
 # sv-dv-learning
 Summer 2026 Design Verification learning: SystemVerilog → UVM → FIFO project
 
-- Due to lab access issues over summer testing is scheduled to begin in September.
+- Due to lab access issues over summer testing began in October and is now complete.
 
 ## Summer DV Learning - Week Summaries
 
